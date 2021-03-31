@@ -114,6 +114,10 @@ body {
   margin: 1rem 0;
   max-height: 25rem;
   object-fit: cover;
+  transition: all 0.4s ease;
+}
+.galery img:hover {
+  transform: scale(1.05);
 }
 
 #map {

@@ -120,7 +120,12 @@ body{
         margin: 1rem 0;
         max-height: 25rem;
         object-fit: cover;
+        transition: all .4s ease;
+        &:hover{
+            transform: scale(1.05);
+        }
     }
+    
 }
 
 #map {
