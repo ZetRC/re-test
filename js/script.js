@@ -13,3 +13,12 @@ function initMap() {
     });
   }
   
+  
+  $(document).ready(function(){
+    $('.galery img').click(function(){
+  
+      window.open($(this)[0].src, '_blank')
+  
+    });
+  
+  });
