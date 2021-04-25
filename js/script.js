@@ -14,7 +14,7 @@ $(document).ready(function(){
     }).addTo(mymap);
 
     var marker = L.marker([29.79, -98.42]).addTo(mymap);
-    marker.bindPopup("<h5>Property</h5>").openPopup();
+    marker.bindPopup("PROPERTY").openPopup();
   }
 
   function selectGaleryImages() {
