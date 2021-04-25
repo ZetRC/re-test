@@ -121,6 +121,7 @@ body{
         max-height: 25rem;
         object-fit: cover;
         transition: all .4s ease;
+        cursor: pointer;
         &:hover{
             transform: scale(1.05);
         }
@@ -128,9 +129,9 @@ body{
     
 }
 
-#map {
+#mapid {
     margin: 1.5rem 0;
-    height: 400px;
+    height: 450px;
     width: 100%;
 }
 
