@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+  const scrollToMap = (()=>{
+    $("#mapButton").click(function() {
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#mapid").offset().top
+      }, 500);
+    });
+  })
+
   function initMap() {
 
     var mymap = L.map('mapid').setView([29.79, -98.42], 13);
@@ -17,14 +25,14 @@ $(document).ready(function(){
     marker.bindPopup("PROPERTY").openPopup();
   }
 
-  function selectGaleryImages() {
-    
+  const selectGaleryImages = function () {  
     $('.galery img').click(function(){
       window.open($(this)[0].src, '_blank')
     });
   }
-
+  
   initMap()
   selectGaleryImages()
+  scrollToMap()
 
 });
